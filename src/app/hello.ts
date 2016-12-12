@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 
+import {fabric} from 'fabric';
+
 @Component({
   selector: 'fountain-app',
   moduleId: __moduleName,
@@ -9,6 +11,6 @@ export class HelloComponent {
   public hello: string;
 
   constructor() {
-    this.hello = 'Hello World!';
+    this.hello = `Hello World: ${fabric.version}`;
   }
 }
